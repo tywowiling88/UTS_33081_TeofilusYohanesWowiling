@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">UTS_33081_TeofilusYohanesWowiling</string>
+    <string name="authorName">Nama : Teofilus Yohanes Wowiling</string>
+    <string name="authorNim">NIM : 33081</string>
+    <string name="authorClass">Kelas : DL</string>
+    <string name="refrence"><b>Refrences</b></string>
+    <string name="refrence1">Modul 1 - 7</string>
+    <string name="refrence2">https://developer.android.com/</string>
+    <string name="refrence3">https://stackoverflow.com/</string>
+    <string name="refrence4">https://youtube.com/</string>
+    <string name="refrence5">https://www.geeksforgeeks.org/</string>
+    <string name="quotes">Do Your Best And Let God Do The Rest</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

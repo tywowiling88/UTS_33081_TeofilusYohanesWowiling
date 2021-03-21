@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnLayoutActivityPlayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:foregroundTint="#F80000"
+    android:orientation="vertical"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:id="@+id/lnLayoutActivityPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:outlineAmbientShadowColor="@color/bgApp"
+            android:outlineSpotShadowColor="@color/bgApp"
+            android:src="@drawable/ic_chevron_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:text="Currently Playing"
+            android:textColor="@color/bgApp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:outlineAmbientShadowColor="@color/bgApp"
+            android:outlineSpotShadowColor="@color/bgApp"
+            android:src="@drawable/ic_menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnLayoutActivityPlayer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnLayoutActivityPlayer2">
+
+        <ImageView
+            android:id="@+id/ivSongBackground"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="This Is Song Name"
+            android:textColor="@color/bgApp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="This Is Singer Name"
+            android:textColor="@color/bgApp"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lnLayoutActivityPlayer5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnLayoutActivityPlayer3">
+
+        <TextView
+            android:id="@+id/tvDuration0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:15"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/sbSongDuration"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:progressTint="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tvDuration1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:15"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnLayoutActivityPlayer5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivShuffle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_shuffle_off" />
+
+        <ImageView
+            android:id="@+id/ivSkipPrevious"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_skip_previous" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/ivSkipNext"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_skip_next" />
+
+        <ImageView
+            android:id="@+id/ivRepeat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ic_repeat_off" />
+        
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
